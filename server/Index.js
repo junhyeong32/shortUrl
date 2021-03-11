@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const shortUrlRouter = require("./routes/shortUrl");
+const getUrlDataRouter = require("./routes/getUrlData");
 require("dotenv").config();
 const port = process.env.PORT || 3011;
 
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/routes", shortUrlRouter);
+app.use("/routes", getUrlDataRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
