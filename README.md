@@ -1,4 +1,4 @@
-# my-project
+## my-project
 > shortUrl
 
 ## Build Setup
@@ -13,13 +13,13 @@
 
 # install dependencies
 
-\$ npm install
+$ npm install
 
 # server with hot reload at localhost:3010 or 3011
 
-\$ npm start
+$ npm start
 
 # crawling and telegramBot
 
-\$ node crawling.js or node telegramBot.js
+$ node crawling.js or node telegramBot.js
 ```
