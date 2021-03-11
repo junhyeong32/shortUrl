@@ -1,0 +1,29 @@
+{
+  "name": "shorturl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junhyeong32/shortUrl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junhyeong32/shortUrl/issues"
+  },
+  "homepage": "https://github.com/junhyeong32/shortUrl#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "dotenv": "^8.2.0",
+    "node-telegram-bot-api": "^0.51.0",
+    "puppeteer": "^8.0.0",
+    "socket.io": "^3.1.2",
+    "socket.io-client": "^3.1.2",
+    "xlsx": "^0.16.9"
+  }
+}
