@@ -9,7 +9,7 @@ router.post("/shortUrl", async (req, res) => {
       beforeUrl: beforeUrl,
       afterUrl: afterUrl,
     });
-    return res.status(200).json({ message: "Create short" });
+    return res.status(200).json({ message: "Create shortUrl" });
   } catch (error) {
     console.log(error);
     res.sendStatus(500);
