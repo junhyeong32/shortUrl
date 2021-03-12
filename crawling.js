@@ -22,12 +22,13 @@ const login = async (page) => {
 const makeUrl = async (page) => {
   try {
     socket.on("newData", async (data) => {
-      console.log(data);
-      await page.type("#link", data);
-      await page.click("button.btn_cutt");
+      for (let i = 0; i < 100; i++) {
+        await page.type("#link", data);
+        await page.click("button.btn_cutt");
 
-      await page.waitForSelector("button");
-      await copyShortUrl(page, data);
+        await page.waitForSelector("button");
+        await copyShortUrl(page, data);
+      }
     });
   } catch (e) {
     console.log(e);
